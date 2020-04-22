@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="row mt-4">
+    <div class="row mt-4 add">
         <div class="col">
             <h2>Add Item</h2>
 
             <form  action="add_todo/" method="post" class="form-inline">
                 {% csrf_token %}
-                <input type="text" name="content" class="form-control mb-2 mr-sm-2" placeholder="Type here">
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                <input type="text" name="content">
+                <label>Type here</label>
+                <button type="submit" class="plus">+</button>
             </form>
 
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-4 content">
         <div class="col">
             <ul class="list-group">
                 {% for item in todo_items %}

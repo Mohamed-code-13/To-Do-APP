@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.add h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.add
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0 , 0 , 0 , 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0 , 0 , 0 , 0.5);
+    border-radius: 10px;
+}
+
+.add input
+{
+    width: 70%;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+label{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.add input:focus ~ label
+{
+    top: 50%;
+    left: 15px;
+    color: dodgerblue;
+    font-size: 12px;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.plus {
+    position: absolute;
+    right: 25px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    line-height: 0px;
+    color: dodgerblue;;
+    cursor: pointer;
+    font-size: 45px;
+    transition: transform .4s;
+}
+
+.plus:hover {
+    transform: rotate(180deg);
+}
+
+.content
+{
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
